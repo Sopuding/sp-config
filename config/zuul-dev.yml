@@ -21,8 +21,8 @@ zuul:
 ribbon:
   ConnectTimeout: 1000
   ReadTimeout: 1000
-  MaxAutoRetriesNextServer: 1  #默认1
-  MaxAutoRetries: 1   #默认0
+  MaxAutoRetriesNextServer: 1  
+  MaxAutoRetries: 1   
   
 hystrix:
   command:
@@ -37,4 +37,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream #暴露端口
+        include: hystrix.stream 
